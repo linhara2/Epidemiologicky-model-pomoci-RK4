@@ -1,0 +1,33 @@
+Řešení epidemiologického modelu SIR s konstantní incidencí pomocí RK4.
+1) Algoritmus
+	-určit parametry - konstanty
+		-beta - rychlost nakažení
+		-gama - rychlost uzdravení
+		-N - celkový počet jedinců
+		-t - čas
+		-h - délka kroku
+		-založit a určit pole hodnot - časovou osu t
+	-založit pole pro vypočtené hodnoty S(t), I(t), R(t)
+		kde 	S - jedinci, kteří nemoc neprodělali a můžou se nakazit
+			I - infekční jedinci
+			R - uzdravení/imunní jedinci
+	-určit počáteční podmínky
+		-S(0)=...
+		-I(0)=...
+		-R(0)=0
+	-řešení soustavy ODR modelu SIR pomocí RK4 + zápis vypočítaných hodnot do souboru txt.
+
+2) Funkce, třídy/objekty
+	- zadání některých konstant (N, t, případně R0(reprodukční číslo)) z klávesnice do třídy cyklem for, ostatní konstanty dány přímo v kódu
+	- pro RK4 a zápis vypočtených hodnot cyklus for
+
+3) Kdo co bude dělat
+	- Simona: 	- základní struktura RK4 pro daný problém
+			- vedení skupiny, tvorba chyb
+	
+	- Radek: 	- rozdělení programu od Simony na jednotlivé dílčí programy a jejich zprovoznění v projektu
+			- vytvoření tříd, objektů a polí pro jednotlivé konstanty a proměnné
+			- tvorba chyb
+	
+	- Marko:	- vytvoření grafického výstupu
+			- tvorba chyb
