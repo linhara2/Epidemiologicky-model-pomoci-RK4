@@ -28,3 +28,18 @@ int ulozVysledky(data &pocPar){
 
 	return 0;
 }
+
+int ulozGraf(data &pocPar){
+	ofstream mujGraf("VysledkyGraf.txt");
+	
+	mujGraf << "#t \t S \t I \t R" << endl; //hlavicka pro tabulku napocitanych hodnot
+		
+	for (int i = 0; i <= pocPar.n; i++){
+		
+		mujGraf << pocPar.t[i] << "\t" << pocPar.S[i] << "\t" << pocPar.I[i] << "\t" << pocPar.R[i] << endl;
+	}
+		
+	mujGraf.close();
+
+	return 0;
+}
