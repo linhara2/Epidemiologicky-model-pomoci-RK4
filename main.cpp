@@ -14,5 +14,13 @@ int main(int argc, char** argv) {
 	
 	ulozVysledky(pocPar);
 	
+	bool g;
+	cout << "Chcete vygenerovat soubor pro vytvoreni grafu v Maple? (bez hlavicky) (1/0)" << endl;
+	cin >> g;
+	
+	if (g==1){
+	ulozGraf(pocPar);
+	}
+	
 	return 0;
 }
