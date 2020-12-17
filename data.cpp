@@ -23,8 +23,8 @@ void data::zadatData(){
 	r0 = beta / gamma;
 	n = T/dt;
 	
-	t.resize(n);
-	S.resize(n);
-	I.resize(n);
-	R.resize(n);
+	t.resize(n+1);
+	S.resize(n+1);
+	I.resize(n+1);
+	R.resize(n+1);
 }
